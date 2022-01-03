@@ -38,7 +38,8 @@ const Text = ({ com, toggleFav, fav }) => {
 
     const favChecker = (overview) => {
         let found = false
-        fav?.map((p) => {
+        // eslint-disable-next-line array-callback-return
+        fav?.map(p => {
            if (p.id === overview.id) {
                 found = true
             } 
